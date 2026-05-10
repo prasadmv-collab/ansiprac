@@ -3,7 +3,7 @@ hosts: web
 become: yes 
 tasks: - name: Copy WAR file to Tomcat 
 copy: 
-src: "/var/snap/jenkins/5022/workspace/anscprac/target/ansibleapp.war" 
+src: "/var/snap/jenkins/5022/workspace/ansiprac/target/ansibleapp.war" 
 dest: "/opt/tomcat/webapps/ansibleapp.war" 
 remote_src: no - name: Restart Tomcat 
 shell: | 
