@@ -7,7 +7,7 @@
     - name: Copy WAR file to Tomcat
       copy:
         src: "../target/ansibleapp.war"
-        dest: "/opt/tomcat/webapps/ansible.war"
+        dest: "/opt/tomcat/webapps/ansibleapp.war"
         remote_src: no
 
     - name: Restart Tomcat
